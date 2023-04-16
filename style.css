@@ -5,82 +5,117 @@
 }
 
 body {
-    height: 100vh;
-    background: linear-gradient(90deg, rgba(136,129,228,1) 0%, rgba(45,92,218,1) 100%);
+    background: linear-gradient(93deg, rgba(187, 129, 228, 1) 0%, rgba(94, 50, 214, 1) 100%);
+}
+
+#box {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
-#main {
+#box-apresentacao {
+    background-color: rgba(89, 95, 175, 0.9);
     display: flex;
-    flex-direction: column;
-    background-color: rgb(0, 0, 0);
-    border-radius: 30px;
-    width: 420px;
-    height: 450px;
+    flex-direction: row;
+    width: 600px;
     overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 3px 5px;
+    word-wrap: break-word;
+}
+
+#icon_pontes {
+    width: 300px;
+    height: 300px;
+}
+
+#texto {
+    font-size: 25px;
+    margin-top: 10%;
+    color: white;
+}
+
+#test {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    height: 600px;
+    width: 600px;
+    border-radius: 30px;
     align-items: center;
-
-}
-
-#title-box {
-    margin-top: 40px;
-    color: aliceblue;
-}
-
-#box-input {
-    height: 80px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-#txtTask {
-    height: 30px;
-    width: 180px;
-    margin-right: 20px;
-    margin-left: 5px;
-    border: none;
-    border-radius: 5px;
-    padding: 3px;
 }
 
 #addTask {
-    border-radius: 5px;
+    background: linear-gradient(93deg, rgba(187, 129, 228, 1) 0%, rgba(94, 50, 214, 1) 100%);
+    color: white;
     border: none;
+    border-radius: 4px;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+
+}
+
+#txtTask {
     height: 40px;
-    width: 140px;
+    width: 300px;
+    margin-right: 40px;
+    font-size: 22px;
+    border: 0;
+    border-bottom: 2px solid;
+}
+
+#txtTask:focus {
+    outline: 0;
+}
+
+#title_box {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#box-input {
+    margin-bottom: 20px;
 }
 
 #box-task {
-    display: flex;
-    height: 220px;
-    background-color: aliceblue;
-    width: 350px;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 350px;
     overflow-y: scroll;
-    border-radius: 10px;
 }
 
-li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 3px;
-    padding: 10px;
-    background-color: #f7f7f7;
-    border-radius: 5px;
+#toDoList {
+    font-size: 22px;
 }
 
-li button { 
+.feito {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.botaoExcluir {
+    color: white;
+    background-color: blue;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
     cursor: pointer;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
+.botaoRealizado {
+    color: white;
+    background-color: gray;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-left: 20px;
+}
 
-footer {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    color: white
+.listaTarefas{
+    margin-bottom: 20px;
 }
